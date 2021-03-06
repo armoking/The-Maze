@@ -26,7 +26,7 @@ public class Main {
     static int rnd_values = new Random().nextInt();
 
 
-    public static final String PATH_TO_IMAGE = System.getProperty("user.dir") + "/src/man_up.jpg";
+    public static final String PATH_TO_IMAGE = "resource\\man_up.jpg";
 
     public static boolean DRAW = false;
 
@@ -143,7 +143,6 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            System.out.println(PATH_TO_IMAGE);
             do {
                 exit = false;
                 stop = false;
@@ -154,9 +153,8 @@ public class Main {
                 state = Menu.States.none;
                 manImage = null;
                 {
-                    File man = new File(PATH_TO_IMAGE);
                     try {
-                        manImage = ImageIO.read(man);
+                        manImage = ImageIO.read( Main.class.getResource("man_up.jpg"));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

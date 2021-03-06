@@ -1,0 +1,3 @@
+LOGGERS
+java.lang.NullPointerException: Cannot invoke "java.awt.image.BufferedImage.getWidth()" because "Main.manImage" is null
+done
