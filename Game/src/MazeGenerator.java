@@ -4,7 +4,7 @@ import java.util.Random;
 public class MazeGenerator {
     static Random rnd = new Random();
 
-    class DSU {
+    static class DSU {
         int[] p;
         int[] d;
 
@@ -84,7 +84,6 @@ public class MazeGenerator {
             int x1 = firstNode / h;
             int y1 = firstNode % h;
             int x2 = secondNode / h;
-            int y2 = secondNode % h;
 
             if (dsu.get(firstNode) != dsu.get(secondNode)) {
                 if (x1 != x2) {
