@@ -1,1 +1,1 @@
-java -jar Game.jar
+START /MIN java -jar Game.jar
